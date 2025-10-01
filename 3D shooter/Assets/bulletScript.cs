@@ -6,6 +6,7 @@ public class bulletScript : MonoBehaviour
 { 
     public Rigidbody body;
     public float bulletSpeed;
+    public int dmg;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +17,18 @@ public class bulletScript : MonoBehaviour
     void Update()
     {
         
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) 
+        {
+            collision.gameObject.GetComponent<playerHealth>().health -= dmg;
+            //Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
+        }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<EnemyHealth>().health -= dmg;
+            //Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
+        }
     }
 }
