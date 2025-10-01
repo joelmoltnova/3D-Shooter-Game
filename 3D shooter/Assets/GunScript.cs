@@ -21,7 +21,7 @@ public class GunScript : MonoBehaviour
     }
     void bulletFire()
     {
-        Vector3 positie = transform.position;
+        Vector3 positie = transform.position + Vector3.forward*2;
         
         GameObject bullet = Instantiate(Bullet, positie, Quaternion.identity);
         bullet.GetComponent<Rigidbody>().velocity = Vector3.forward * 100;

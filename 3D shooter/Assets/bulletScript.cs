@@ -30,5 +30,6 @@ public class bulletScript : MonoBehaviour
             collision.gameObject.GetComponent<EnemyHealth>().health -= dmg;
             //Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
         }
+        Destroy(this.gameObject);
     }
 }
