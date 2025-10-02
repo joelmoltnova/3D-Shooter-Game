@@ -23,13 +23,13 @@ public class bulletScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")) 
         {
-            collision.gameObject.GetComponent<playerHealth>().health -= scriptable.bDamage;
-            Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
+            collision.gameObject.GetComponent<PlayerHealth>().health -= dmg;
+            Debug.Log(collision.gameObject.GetComponent<PlayerHealth>().health);
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<EnemyHealth>().health -= scriptable.bDamage;
-            //Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
+            collision.gameObject.GetComponent<Enemyhealth>().health -= dmg;
+            Debug.Log(collision.gameObject.GetComponent<Enemyhealth>().health);
         }
         Destroy(this.gameObject);
     }

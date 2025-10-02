@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
-    [SerializeField] BulletScriptableObjects Scriptable;
+    [SerializeField] public BulletScriptableObjects Scriptable;
     public GameObject Bullet;
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class GunScript : MonoBehaviour
         Vector3 positie = transform.position + Vector3.forward*2;
         
         GameObject bullet = Instantiate(Bullet, positie, Quaternion.identity);
-        bullet.GetComponent<bulletScript>().scriptable = Scriptable;
+        bullet.GetComponent<bulletScript>().dmg = Scriptable.bDamage;
         bullet.GetComponent<Rigidbody>().velocity = Vector3.forward * Scriptable.bSpeed;
         
 
