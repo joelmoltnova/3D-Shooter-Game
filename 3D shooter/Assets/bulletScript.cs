@@ -28,7 +28,7 @@ public class bulletScript : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<EnemyHealth>().health -= dmg;
+            collision.gameObject.GetComponent<EnemyHealth>().health -= scriptable.bDamage;
             //Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
         }
         Destroy(this.gameObject);
