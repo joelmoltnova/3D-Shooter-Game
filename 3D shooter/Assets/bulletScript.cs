@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class bulletScript : MonoBehaviour
-{ 
+{
+    [SerializeField] public BulletScriptableObjects scriptable;
     public Rigidbody body;
     public float bulletSpeed;
     public int dmg;
@@ -22,7 +23,7 @@ public class bulletScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")) 
         {
-            collision.gameObject.GetComponent<playerHealth>().health -= dmg;
+            collision.gameObject.GetComponent<playerHealth>().health -= scriptable.bDamage;
             Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
         }
         if (collision.gameObject.CompareTag("Enemy"))
