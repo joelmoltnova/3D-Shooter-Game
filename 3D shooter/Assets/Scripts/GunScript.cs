@@ -26,7 +26,7 @@ public class GunScript : MonoBehaviour
         
         GameObject bullet = Instantiate(Bullet, positie, Quaternion.identity);
         bullet.GetComponent<bulletScript>().dmg = Scriptable.bDamage;
-        bullet.GetComponent<Rigidbody>().velocity = Vector3.forward * Scriptable.bSpeed;
+        bullet.GetComponent<Rigidbody>().linearVelocity = Vector3.forward * Scriptable.bSpeed;
         
 
 
