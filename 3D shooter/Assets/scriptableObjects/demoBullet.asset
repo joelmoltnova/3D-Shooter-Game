@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0118b553926a040bcd88ca667bea07, type: 3}
   m_Name: demoBullet
   m_EditorClassIdentifier: 
-  bulletName: 
-  bulletDamage: 0
-  bulletSpeed: 0
+  bulletName: demo bullet
+  bulletDamage: 5
+  bulletSpeed: 10000
   bulRange: 0
