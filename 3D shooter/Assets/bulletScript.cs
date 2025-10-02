@@ -23,7 +23,7 @@ public class bulletScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) 
         {
             collision.gameObject.GetComponent<playerHealth>().health -= dmg;
-            //Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
+            Debug.Log(collision.gameObject.GetComponent<playerHealth>().health);
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
