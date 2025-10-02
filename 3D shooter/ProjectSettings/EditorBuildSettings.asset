@@ -4,5 +4,21 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/PolygonBattleRoyale/Scenes/1 - Main Menu.unity
+    guid: 7fe85666cbdabc64db0a193e2cc78088
+  - enabled: 1
+    path: Assets/PolygonBattleRoyale/Scenes/2 - Game.unity
+    guid: e693fb2e51fa599488a7f68ac51c5c88
+  - enabled: 1
+    path: Assets/PolygonBattleRoyale/Scenes/3 - Instructions.unity
+    guid: 88aafdd44d6a5694484ee7452ff62f4c
+  - enabled: 1
+    path: Assets/PolygonBattleRoyale/Scenes/4 - Game Over.unity
+    guid: b95af30ae456e7b45b2cefc73f059448
+  - enabled: 1
+    path: Assets/PolygonBattleRoyale/Scenes/5 - End.unity
+    guid: 783a29c4154cb8544af97cbe1eb12ca9
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
