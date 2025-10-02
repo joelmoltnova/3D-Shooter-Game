@@ -17,12 +17,12 @@ public class Scene : MonoBehaviour
 
     public void HideInstructions()
     {
-        SceneManager.LoadScene("1 - Main Menu"); 
+        SceneManager.LoadScene("Demo"); 
     }
 
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("1 - Main Menu");
+        SceneManager.LoadScene("Demo");
     }
 
     public void BackToGame()
