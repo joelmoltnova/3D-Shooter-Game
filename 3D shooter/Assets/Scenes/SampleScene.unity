@@ -128,6 +128,7 @@ GameObject:
   m_PrefabInstance: {fileID: 8546690881701927255}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72692241}
@@ -219,6 +220,9 @@ MeshFilter:
 =======
 --- !u!4 &496652678 stripped
 >>>>>>> Stashed changes
+=======
+--- !u!4 &496652678 stripped
+>>>>>>> Stashed changes
 Transform:
   m_CorrespondingSourceObject: {fileID: 823915137858171176, guid: c9f510ccfb5eabb47ab188262dc608c1, type: 3}
   m_PrefabInstance: {fileID: 8546690881701927255}
@@ -229,6 +233,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 72692237}
   serializedVersion: 2
@@ -254,6 +259,19 @@ MonoBehaviour:
   health: 0
   maxHealth: 50
 --- !u!1 &214119820
+=======
+  m_GameObject: {fileID: 496652674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9c121de9a96c04e97ac0d76818b250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBody: {fileID: 496652678}
+  cameraTransform: {fileID: 1084769628}
+  mouseSensitivity: 100
+  clampAngle: 85
+--- !u!1 &875389295
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,6 +279,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 214119824}
   - component: {fileID: 214119823}
   - component: {fileID: 214119822}
@@ -396,6 +415,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 875389297}
   - component: {fileID: 875389296}
   m_Layer: 0
@@ -581,6 +602,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1044450415
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1993535178841926655, guid: efc3c293fab0e8d439ee6f563e7e14f1, type: 3}
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &8546690881701927255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -761,17 +785,26 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 496652682}
   m_SourcePrefab: {fileID: 100100000, guid: c9f510ccfb5eabb47ab188262dc608c1, type: 3}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 72692241}
   - {fileID: 1044450419}
   - {fileID: 214119824}
+=======
+  - {fileID: 875389297}
+  - {fileID: 8546690881701927255}
+  - {fileID: 2117185444}
+>>>>>>> Stashed changes
 =======
   - {fileID: 875389297}
   - {fileID: 8546690881701927255}
