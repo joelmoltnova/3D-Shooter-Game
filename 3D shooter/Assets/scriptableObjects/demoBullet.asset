@@ -15,4 +15,4 @@ MonoBehaviour:
   bulletName: demo bullet
   bulletDamage: 5
   bulletSpeed: 100
-  bulRange: 0
+  bulRange: 200

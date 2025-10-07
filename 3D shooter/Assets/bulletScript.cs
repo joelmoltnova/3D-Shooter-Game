@@ -8,6 +8,8 @@ public class bulletScript : MonoBehaviour
     public Rigidbody body;
     public float bulletSpeed;
     public int dmg;
+    public float range;
+    private float flown;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,12 @@ public class bulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        flown++;
+        if (flown > range)
+        {
+            Destroy(this.gameObject);
+        }
+
     }
     private void OnCollisionEnter(Collision collision)
     {
