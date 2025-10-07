@@ -3536,9 +3536,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb63085579e247d40b8fdb09c52e5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scriptable: {fileID: 11400000, guid: ef291e5dbf1499541b210840c8609a20, type: 2}
+  Scriptable: {fileID: 0}
   Bullet: {fileID: 1993535178841926655, guid: efc3c293fab0e8d439ee6f563e7e14f1, type: 3}
-  lookCamera: {fileID: 791460658}
+  lookCamera: {fileID: 0}
 --- !u!65 &76005495
 BoxCollider:
   m_ObjectHideFlags: 0
