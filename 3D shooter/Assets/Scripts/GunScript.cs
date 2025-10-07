@@ -6,6 +6,7 @@ public class GunScript : MonoBehaviour
 {
     [SerializeField] public BulletScriptableObjects Scriptable;
     public GameObject Bullet;
+    public Transform lookCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +23,11 @@ public class GunScript : MonoBehaviour
     }
     void bulletFire()
     {
-        Vector3 positie = transform.position + Vector3.forward*2;
+        Vector3 positie = transform.position + lookCamera.forward * 2;
         
         GameObject bullet = Instantiate(Bullet, positie, Quaternion.identity);
         bullet.GetComponent<bulletScript>().dmg = Scriptable.bDamage;
-        bullet.GetComponent<Rigidbody>().linearVelocity = Vector3.forward * Scriptable.bSpeed;
+        bullet.GetComponent<Rigidbody>().linearVelocity = lookCamera.forward * Scriptable.bSpeed;
         
 
 

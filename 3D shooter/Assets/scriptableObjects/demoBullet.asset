@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletName: demo bullet
   bulletDamage: 5
-  bulletSpeed: 10000
+  bulletSpeed: 100
   bulRange: 0
