@@ -6,6 +6,7 @@ public class flagGrab : MonoBehaviour
     public bool haveFlag;
     public Transform lookCamera;
     private RaycastHit hit;
+    public canvasScript Canvas;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,12 +21,18 @@ public class flagGrab : MonoBehaviour
         {
             if (hit.collider.CompareTag("Objective")) 
             {
+                Canvas.activeprompt();
                 //Debug.Log("found");
                 if (Input.GetKey(KeyCode.E))
                 {
                     haveFlag = true;
+                    Destroy(hit.collider.gameObject);
                     //Debug.Log("have flag");
                 }
+            }
+            else
+            {
+                Canvas.inActiveprompt();
             }
         }   
     }
