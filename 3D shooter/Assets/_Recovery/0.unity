@@ -97844,6 +97844,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 3231049827368899469, guid: c9f510ccfb5eabb47ab188262dc608c1, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2222346464153789849, guid: a1a0e3a4924b7d7409a55ae05cbc4b76, type: 3}
+    - target: {fileID: 6006116156941091399, guid: c9f510ccfb5eabb47ab188262dc608c1, type: 3}
+      propertyPath: gunA
+      value: 
+      objectReference: {fileID: 11400000, guid: ef291e5dbf1499541b210840c8609a20, type: 2}
+    - target: {fileID: 6006116156941091399, guid: c9f510ccfb5eabb47ab188262dc608c1, type: 3}
+      propertyPath: gunB
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ae7f8b58606fb243ad9e798dada19fe, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

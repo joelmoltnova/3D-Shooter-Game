@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
-    [SerializeField] public BulletScriptableObjects Scriptable;
+    [SerializeField] public BulletScriptableObjects gunA, gunB, Scriptable;
     public GameObject Bullet;
     public Transform lookCamera;
+
+    public MeshFilter meshFilter;
+    public MeshRenderer MeshRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Scriptable = gunA;
+        meshFilter.mesh = Scriptable.bModel;
+        MeshRenderer.material = Scriptable.bMaterial;
     }
 
     // Update is called once per frame
@@ -20,10 +25,21 @@ public class GunScript : MonoBehaviour
         {
             bulletFire();
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (Scriptable == gunA)
+            {
+                Scriptable = gunB;
+            }
+            else
+            {
+                Scriptable = gunA;
+            }
+        }
     }
     void bulletFire()
     {
-        Vector3 positie = transform.position + lookCamera.forward * 2;
+        Vector3 positie = lookCamera.position + lookCamera.forward * 2;
         
         GameObject bullet = Instantiate(Bullet, positie, Quaternion.identity);
         bullet.GetComponent<bulletScript>().dmg = Scriptable.bDamage;
