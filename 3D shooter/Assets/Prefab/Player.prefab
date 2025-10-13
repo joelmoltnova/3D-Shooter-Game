@@ -1120,6 +1120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::flagGrab
   haveFlag: 0
   lookCamera: {fileID: 3953303070765903886}
+  Canvas: {fileID: 0}
 --- !u!1 &2606388868736693978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,13 +2121,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5021899599513204789}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09246678, y: 0.90487695, z: -0.2551278, w: -0.3279596}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.47735584, y: 0.47735602, z: 0.4773559}
+  m_LocalRotation: {x: -0.7396784, y: 0.00000008940696, z: -0.0000000372529, w: 0.6729607}
+  m_LocalPosition: {x: 0.47399148, y: -0.14869204, z: 0.4077893}
+  m_LocalScale: {x: 22.44, y: 22.44, z: 22.44}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3953303070765903886}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -95.408, y: 0, z: 0}
 --- !u!33 &3231049827368899469
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2134,7 +2135,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5021899599513204789}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: -2222346464153789849, guid: a1a0e3a4924b7d7409a55ae05cbc4b76, type: 3}
 --- !u!23 &235125757189548070
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2160,7 +2161,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: -6478536213147159724, guid: a1a0e3a4924b7d7409a55ae05cbc4b76, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2200,10 +2201,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.19875516, y: 0.08439542, z: 1}
+  m_Center: {x: 0.15062259, y: -0.026382262, z: -0.0000000063082446}
 --- !u!114 &6006116156941091399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2216,6 +2217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb63085579e247d40b8fdb09c52e5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunA: {fileID: 0}
+  gunB: {fileID: 0}
   Scriptable: {fileID: 11400000, guid: ef291e5dbf1499541b210840c8609a20, type: 2}
   Bullet: {fileID: 1993535178841926655, guid: efc3c293fab0e8d439ee6f563e7e14f1, type: 3}
   lookCamera: {fileID: 3953303070765903886}

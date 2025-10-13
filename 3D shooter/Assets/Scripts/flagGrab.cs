@@ -16,7 +16,7 @@ public class flagGrab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(new Vector3(transform.position.x,lookCamera.position.y, transform.position.z), lookCamera.forward * 1, Color.red);
+        //Debug.DrawRay(new Vector3(transform.position.x,lookCamera.position.y, transform.position.z), lookCamera.forward * 1, Color.red);
         if (Physics.Raycast(new Vector3(transform.position.x, lookCamera.position.y, transform.position.z), lookCamera.forward, out hit, 1)) 
         {
             if (hit.collider.CompareTag("Objective")) 
@@ -40,7 +40,7 @@ public class flagGrab : MonoBehaviour
     {
         if (haveFlag && other.CompareTag("Finish")) 
         {
-            Debug.Log("game complete");
+            //Debug.Log("game complete");
             SceneManager.LoadScene("1 - Main Menu");
         }
     }

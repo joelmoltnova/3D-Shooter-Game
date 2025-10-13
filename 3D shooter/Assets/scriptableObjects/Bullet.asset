@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d0118b553926a040bcd88ca667bea07, type: 3}
-  m_Name: demoBullet
-  m_EditorClassIdentifier: 
-  bulletName: demo bullet
-  bulletDamage: 5
-  bulletSpeed: 100
-  bulRange: 200
+  m_Name: Bullet
+  m_EditorClassIdentifier: Assembly-CSharp::BulletScriptableObjects
+  bulletName: otherWeapon
+  bulletDamage: 10
+  bulletSpeed: 50
+  bulRange: 10
   bulletModel: {fileID: -2222346464153789849, guid: a1a0e3a4924b7d7409a55ae05cbc4b76, type: 3}
   bulletMaterial: {fileID: -6478536213147159724, guid: a1a0e3a4924b7d7409a55ae05cbc4b76, type: 3}
