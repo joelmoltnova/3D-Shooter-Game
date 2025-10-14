@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDisable()
     {
-        // Unsubscribe and disable
+        //  disable
         onFoot.Jump.performed -= ctx => motor.Jump();
         onFoot.Crouch.performed -= ctx => motor.Crouch();
         onFoot.Disable();

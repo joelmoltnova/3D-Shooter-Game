@@ -9,19 +9,19 @@ public class BasicEnemyAI : MonoBehaviour
     public GameObject player;
 
     [Header("Vision Settings")]
-    public float sightDistance = 20f;       // How far the enemy can see
-    public float fieldOfView = 90f;         // How wide the enemy can see
-    public float rayOriginHeight = 1.5f;    // Height of the “eyes” for raycast
-    public bool showDebugRay = true;        // Show a red line in scene for debugging
-    public LayerMask obstacleMask;          // What blocks sight
+    public float sightDistance = 20f;       
+    public float fieldOfView = 90f;         
+    public float rayOriginHeight = 1.5f;    
+    public bool showDebugRay = true;        
+    public LayerMask obstacleMask;         
 
     [Header("Chase Settings")]
-    public float investigateTime = 2f;      // How long the enemy waits at last seen position
-    private float investigateTimer = 0f;    // Countdown while investigating
-    private Vector3 lastKnownPlayerPos;     // Store last known player position
+    public float investigateTime = 2f;     
+    private float investigateTimer = 0f;   
+    private Vector3 lastKnownPlayerPos;     
 
-    private int currentWaypoint = 0;        // Track which patrol point to go to
-    private float waypointThreshold = 1f;   // Distance to switch to next patrol point
+    private int currentWaypoint = 0;        
+    private float waypointThreshold = 1f;  
 
     private enum State { Patrol, Chase, Investigate }
     private State currentState = State.Patrol;
@@ -46,7 +46,7 @@ public class BasicEnemyAI : MonoBehaviour
                 if (CanSeePlayer())
                 {
                     currentState = State.Chase;
-                    lastKnownPlayerPos = player.transform.position; // store position
+                    lastKnownPlayerPos = player.transform.position; // remebers the  position
                 }
                 break;
 
@@ -54,14 +54,14 @@ public class BasicEnemyAI : MonoBehaviour
                 Chase();
                 if (CanSeePlayer())
                 {
-                    lastKnownPlayerPos = player.transform.position; // update last seen
+                    lastKnownPlayerPos = player.transform.position; //  then updates the  last seen
                 }
                 else
                 {
-                    // Lost sight, start investigating
+                    // if it Lost sight, starts investigating
                     currentState = State.Investigate;
                     investigateTimer = investigateTime;
-                    agent.SetDestination(lastKnownPlayerPos); // move to last seen
+                    agent.SetDestination(lastKnownPlayerPos); // move to last seen location
                 }
                 break;
 
